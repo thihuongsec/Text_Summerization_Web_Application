@@ -47,7 +47,7 @@ Tải modul LLMs về máy: `ollama run gemma3:4b`
 
 ## Kết quả
 * Chức năng nhập văn bản: []()
-* Chức nnagw upload file: []()
+* Chức năng upload file: []()
 * Chức năng dán url web: []()
 
 ## License
