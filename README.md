@@ -46,8 +46,12 @@ Tải modul LLMs về máy: `ollama run gemma3:4b`
 <img width="765" height="384" alt="image" src="https://github.com/user-attachments/assets/d4f42f54-69e9-45fa-9914-b1f1299aef90" />
 
 ## Kết quả
-* Chức năng nhập văn bản: []()
-* Chức năng upload file: []()
-* Chức năng dán url web: []()
+* Chức năng nhập văn bản: [Kết quả](https://www.youtube.com/watch?v=GwiL_-PZS04)
+* Chức năng upload file: [Kết quả](https://www.youtube.com/watch?v=R6EyFmTnNDI)
+* Chức năng dán url web: [Kết quả](https://www.youtube.com/watch?v=kosM79EGnyM&t=18s)
 
 ## License
+MIT License
+Copyright (c) 2026 Nguyen Thi Huong
+*Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.*
