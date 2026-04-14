@@ -50,5 +50,4 @@ Tải modul LLMs về máy: `ollama run gemma3:4b`
 * Chức nnagw upload file: []()
 * Chức năng dán url web: []()
 
-
 ## License
