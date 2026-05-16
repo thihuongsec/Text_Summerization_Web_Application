@@ -1,28 +1,57 @@
-# 1. Cài đặt Ollama 
-Tải Ollama trên ollama.com, chọn hệ điều hành phù hợp
-# 2. Chạy model LLM 
-Sau khi tải xong mở cmd trên máy tính, cài mô hình ngôn ngữ gemma (hoặc mô hình khác tuy chọn) với câu lệnh:
-`ollama run <tên mô hình>`, với model gemma thì sẽ là: `ollama run gemma3`
-# 3. Kiểm tra model vừa chạy
-Sau khi tải model xong, cmd sẽ hiện dòng: `send me a message`, lúc này có thể gõ bất cứ một yêu cầu gì rồi enter xem nó có trả về kết quả oke ko
-# 4. Restart lại dịch vụ
-Tắt cmd, rồi mở lại cmd gõ: ollama serve (để bật dịch vụ)
-# 5. Kiểm tra trạng thái ollama
-Kiểm tra ollama đã được bật chưa khi truy cập vào link: `http://localhost:11434/` nếu nó hiện dòng chữ: ollama is running nghĩa là thành công
-# 6. Tạo env để code và lưu dự án
-Tạo môi trường ảo (đối với folder em gửi nó đã có tất cả trong đó rồi, anh chỉ việc tạo môi trường ảo rồi open folder đấy trong môi trương ảo anh vừa tạo)
-- bước 1: tạo môi trường ảo qua cmd -> python -m venv <tên thư mục sẽ chứa môi trg ảo>
-- bước 2: khởi động môi trường ảo bằng -> scripts\activate trong cmd
-- bước 3: sau đó gõ: `code .` cửa sổ sẽ chuyển hướng qua vscode, tạo môi trường ảo thành công!
-  bước 4: mở terminal trong vscode vừa mở, pip install ollama vào môi trường ảo và tải về các thư viện cần cho dự án -> `pip install` <tên thư viện> 
-- các thư viện cần tải em để trong tệp `requirment.txt` và `requirment-dev.txt`, anh tìm và install hết.
-- chương trình em đang chạy trên jupiter, anh chạy file `summerize.ipynb` nha, tìm nút run all ở trên nhé
-- trước đó anh cần chọn kernel cho môi trường ảo, thì anh kiểm tra python anh đang dùng là phiên bản gì, rồi gõ tìm trên vscode        
-# 7. Các câu lệnh có thể có ích
-* `pip install -r <tên file txt>` -> tự động tải về các thư viện đã liệt kê trong file này
-* `pip freeze` -> xem các thư viện đã cài trong môi trường hiện tại
-* `pip show <tên thư viện>` -> hiển thị thông tin về thư viện đó
-* `deactivate` -> tắt môi trường ảo
-* `ctrl + C` -> tắt môi trường ảo (ollama) an toàn khi không dùng 
+# Xây dựng ứng dụng web giúp tóm tắt văn bản dựa trên mô hình ngôn ngữ lớn LLMs
+Với mục tiêu là xây dựng một ứng dụng web có khả năng tóm tắt văn bản tiếng Việt hiệu quả, cho phép người dùng tải lên file văn bản, url của một trang web hoặc nhập dữ liệu trực tiếp trên trường nhập liệu.
 
+## Thiết kế hệ thống
+<img width="925" height="929" alt="image" src="https://github.com/user-attachments/assets/5633d636-54d2-4d74-a0b3-1e4e795cee0f" />
 
+## Yêu cầu và hướng dẫn cài đặt
+### Yêu cầu
+* Cài đặt Visual Code Studio, Python package tối thiểu 3.8 trở lên.
+* Cài đặt Ollama, lựa chọn mô hình Gemma3 bản 4B và tải về.
+* Cấu hình máy: tối thiểu ram 8Gb, ổ nhớ SSD tối thiểu 30Gb.
+* Cài sẵn các thư viện và framework sau bằng công cụ pip install
+### Hướng dẫn cài đặt
+#### 1. Cài đặt Ollama
+[Link download](https://apidog.com/vi/blog/how-to-download-and-use-ollama-vi/)
+
+<img width="1006" height="344" alt="image" src="https://github.com/user-attachments/assets/2cf04e7d-0735-44a8-8989-13ff1635522a" />
+
+Kết quả khi run ollama thành công, mở trình duyệt web để kiểm tra: [](http://localhost:11434/)
+
+<img width="791" height="286" alt="image" src="https://github.com/user-attachments/assets/5725bdd6-79b7-4545-a68f-d6c02e6f2660" />
+
+Tải modul LLMs về máy: `ollama run gemma3:4b`
+
+<img width="959" height="138" alt="image" src="https://github.com/user-attachments/assets/f1f0bafb-a2a0-42dc-bf7b-ba2fe18fecc3" />
+
+#### 2. Tạo môi trường ảo và kích hoạt
+* `python -m venv SUMMERIZE_ENVIRONMENT`
+* `scripts\activate`
+#### 3. Truy cập môi trường ảo và code.
+* Ngôn ngữ lựa chọn: Python, php
+* Framework: Django
+* Database: SQLite
+* Giao diện sau khi hoàn tất
+
+<img width="975" height="519" alt="image" src="https://github.com/user-attachments/assets/c673336e-aaec-4be9-b8f5-b0123839bdfa" />
+
+## Kiểm thử chức năng
+* Chức năng nhập văn bản và tóm tắt
+<img width="754" height="685" alt="image" src="https://github.com/user-attachments/assets/753fb87d-70e3-4c40-b2c5-4d08f0d08396" />
+
+* Chức năng tải file lên (docx, txt, pdf) và tóm tắt
+<img width="778" height="643" alt="image" src="https://github.com/user-attachments/assets/22f82535-fd67-4770-847e-ab1bf9a9827c" />
+
+* Chức năng dán url web để tóm tắt trang
+<img width="765" height="384" alt="image" src="https://github.com/user-attachments/assets/d4f42f54-69e9-45fa-9914-b1f1299aef90" />
+
+## Kết quả
+* Chức năng nhập văn bản: [Kết quả](https://www.youtube.com/watch?v=GwiL_-PZS04)
+* Chức năng upload file: [Kết quả](https://www.youtube.com/watch?v=R6EyFmTnNDI)
+* Chức năng dán url web: [Kết quả](https://www.youtube.com/watch?v=kosM79EGnyM&t=18s)
+
+## License
+MIT License
+Copyright (c) 2026 Nguyen Thi Huong
+*Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.*
