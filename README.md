@@ -19,10 +19,10 @@ Tạo môi trường ảo (đối với folder em gửi nó đã có tất cả 
 - chương trình em đang chạy trên jupiter, anh chạy file `summerize.ipynb` nha, tìm nút run all ở trên nhé
 - trước đó anh cần chọn kernel cho môi trường ảo, thì anh kiểm tra python anh đang dùng là phiên bản gì, rồi gõ tìm trên vscode        
 # 7. Các câu lệnh có thể có ích:
-`pip install -r <tên file txt>` -> tự động tải về các thư viện đã liệt kê trong file này
-`pip freeze` -> xem các thư viện đã cài trong môi trường hiện tại
-`pip show <tên thư viện>` -> hiển thị thông tin về thư viện đó
-`deactivate` -> tắt môi trường ảo
-`ctrl + C` -> tắt môi trường ảo (ollama) an toàn khi không dùng 
+* `pip install -r <tên file txt>` -> tự động tải về các thư viện đã liệt kê trong file này
+* `pip freeze` -> xem các thư viện đã cài trong môi trường hiện tại
+* `pip show <tên thư viện>` -> hiển thị thông tin về thư viện đó
+* `deactivate` -> tắt môi trường ảo
+* `ctrl + C` -> tắt môi trường ảo (ollama) an toàn khi không dùng 
 
 
