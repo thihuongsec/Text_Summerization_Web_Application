@@ -1,0 +1,32 @@
+stop_list_from_system = [
+    "\nUser:",
+    "\nNgười dùng:",
+    "\nQ:",
+    "\nQuestion:",
+    "\nCâu hỏi:",
+    "\nA:",
+    "\nAnswer:",
+    "\nTrả lời:",
+    "\nAssistant:",
+    "\nBot:",
+    "\nBạn", "tôi", "mình", "ta", "xin lỗi", "không thể",
+    "không thể trả lời", "không thể giúp gì thêm", "không thể trả lời câu hỏi này",
+    "Bạn muốn hỏi gì tiếp theo",
+    "Bạn có câu hỏi nào khác không",
+    "Bạn cần tôi giúp gì nữa không"
+    "Bạn cần hỗ trợ gì thêm không", 
+    "Bạn muốn tôi giúp gì nữa không",
+    "Bạn muốn biết thêm điều gì không",
+    "Có điều gì bạn muốn hỏi nữa không",
+    "Nếu bạn có câu hỏi khác",
+    "Nếu bạn cần thêm thông tin",
+    "Nếu bạn cần tôi hỗ trợ thêm",
+    "Nếu bạn muốn biết thêm",
+    "Bạn cần tôi giải thích gì thêm không",
+    "Bạn có muốn hỏi gì khác không",
+    "Bạn có muốn tôi giúp gì nữa không",
+    "Bạn có cần tôi làm gì khác không",
+    "Bạn có muốn tiếp tục không",
+    "Bạn có muốn tôi tóm tắt thêm không"
+]
+

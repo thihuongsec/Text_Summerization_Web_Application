@@ -1,0 +1,13 @@
+--upgrade
+requests==2.32.3
+beautifulsoup4==4.13.4
+ollama-python==0.1.2
+ipython==9.2.0
+ollama==0.4.8
+lxml==5.4.
+streamlit=1.45.1
+pdfplumber
+python-docx
+textract
+uninstall pdfminer.six
+install pdfminer.six==20221105
